@@ -13,6 +13,7 @@ export default function App() {
 	const [long, setLong] = useState([]);
 	const [data, setData] = useState([]);
 	
+	//Retrieve JSON data from API based on coordinates
 	useEffect(() => {
 		const fetchData = async () => {
 			navigator.geolocation.getCurrentPosition(function(position) {
