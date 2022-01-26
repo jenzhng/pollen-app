@@ -7,11 +7,12 @@ import { Button } from 'semantic-ui-react';
 const iconPath = process.env.PUBLIC_URL + '/assets/color/';
 const pollenCount = ["None", "Very Low", "Low", "Medium", "High", "Very High"];
 
-
+//button to refresh data from API, makes another call to API
 const refresh = () => {
   window.location.reload();
 }
 
+//component for displaying Pollen Count data retrieved from API 
 const WeatherCard = ({weatherData}) => (
    <div className="main">
 	   <div className="top">	
